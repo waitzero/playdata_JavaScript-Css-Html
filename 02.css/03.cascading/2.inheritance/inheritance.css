@@ -1,0 +1,16 @@
+.disney {
+  color: red;
+}
+p {
+  border: dashed 2px;
+}
+h3 {
+  color: green;
+}
+#sidebar {
+  color: blue;
+}
+#sidebar h3 {
+  color: inherit;
+}
+/* inherit=강제로 상속 */

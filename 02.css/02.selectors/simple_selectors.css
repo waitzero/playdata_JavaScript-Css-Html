@@ -1,0 +1,15 @@
+/* 기본설정 */
+* {
+  font-family: "Playfair Display", serif;
+}
+/* type selecor 를 활용하여 태그의 색을 slateblue로 적용 */
+h2 {
+  color: slateblue;
+}
+.class-selector {
+  font-size: 30px;
+  border: 2px dashed firebrick;
+}
+#id-selector {
+  color: forestgreen;
+}

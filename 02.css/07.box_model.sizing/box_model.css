@@ -1,0 +1,15 @@
+body {
+  border: 1px solid blue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* default value: contentbox */
+}
+.box1 {
+  width: 300px;
+  border: 1px dashed tomato;
+  background-color: aqua;
+  font-size: 30px;
+  padding: 20px;
+}

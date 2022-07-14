@@ -1,0 +1,43 @@
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  border-spacing: 10px;
+  margin: 0 auto;
+}
+tr,
+td {
+  padding: 10px;
+}
+.browser-color {
+  color: red;
+}
+.google-hex {
+  color: #a52a2a;
+  font-family: "Oswald";
+}
+.google-rgb {
+  color: rgb(0 255 0);
+  font-family: "Fuzzy Bubbles";
+}
+.google-rgba {
+  color: rgba(0, 0, 255, 0.4);
+  font-family: "Raleway";
+}
+.px-parent {
+  font-size: 32px;
+}
+.px-child {
+  font-size: 17px;
+}
+.em-parent {
+  font-size: 3em;
+}
+.em-child {
+  font-size: 0.5em;
+}
+.rem-parent {
+  font-size: 3rem;
+}

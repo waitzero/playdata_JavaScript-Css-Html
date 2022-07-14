@@ -1,0 +1,46 @@
+/* General, reset.css, 기본 설정 */
+* {
+  font-family: "Playfair Display", serif;
+}
+
+/* type selector를 활용하여 h2 태그의 색을 slateblue로 적용 */
+h2 {
+  color: slateblue;
+}
+
+.class-selector {
+  font-size: 30px;
+  border: 2px dashed firebrick; /* 경계선 적용 스타일 */
+}
+
+#id-selector {
+  font-size: 30px;
+  font-style: italic;
+  color: forestgreen;
+}
+.descendent-selector p {
+  color: blueviolet;
+}
+.child-selector > p {
+  color: green;
+}
+.child-selector > .nested-div {
+  color: gold;
+}
+.adjacent-sibling-selector + p {
+  font-size: 30px;
+  color: silver;
+}
+
+/* 일반 형제(자매) 선택자 */
+
+.general-sibling-selector ~ p {
+  font-size: 30px;
+  color: darkblue;
+}
+
+div ~ p {
+  /* 위에 적용된 속성들을 덮어쓰게 됨(overriding). -> specificity개념 설명. */
+  font-size: 30px;
+  color: darkgreen;
+}
