@@ -8,10 +8,13 @@ function count(type) {
   // 더하기/빼기
   if (type === "plus") {
     number = parseInt(number) + 1;
+    resultElement.style.color = "green";
   } else if (type === "minus") {
     number = parseInt(number) - 1;
+    resultElement.style.color = "red";
   } else if (type === "reset") {
     number = 0;
+    resultElement.style.color = "black";
   }
 
   // 결과 출력
