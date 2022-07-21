@@ -4,8 +4,8 @@ const express = require("express"); // express 패키지를 import
 
 const app = express();
 
-const clientId = "42X2GTj2SplM6W_Xxw5v";
-const clientSecret = "oXIK9Blzsh";
+const clientId = "vk9Ol957SEFzMeMyZ0aR";
+const clientSecret = "hqfmzQivjo";
 
 // nodejs 서버가 또 다른 Client가 되어 Naver Papago Server에 요청(request)을 보내기 위해 사용 - request 패키지 설치 필요
 const request = require("request");
@@ -33,6 +33,8 @@ app.get("/", (req, res) => {
 
 // localhost:3000/detectLangs 경로로 요청했을 때
 app.post("/detectLangs", (req, res) => {
+  //???객체 디스트럭쳐링 써서 한 줄로 작성
+  const { text: query, targetLanguage } = req.body;
   console.log(query);
   console.log(targetLanguage);
 });
