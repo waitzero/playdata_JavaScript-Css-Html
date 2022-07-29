@@ -32,7 +32,7 @@ public class MouseTest {
 		animals[0] = tom; // animals[0] = new Cat();
 		animals[1] = new Dog();
 		animals[2] = new Mouse();
-		animals[3] = new Dog();
+		animals[3] = new Cat();
 //		tom.sing();
 //		new Dog().sing();
 //		new Mouse().sing();
@@ -49,7 +49,7 @@ public class MouseTest {
 
 
 
-class Dog extends Animal {
+class Whale extends Animal {
 
 	@Override
 	void sing() {
