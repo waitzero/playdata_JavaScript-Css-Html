@@ -5,4 +5,9 @@ public class Cat extends Animal{
 		super();
 	}
 
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

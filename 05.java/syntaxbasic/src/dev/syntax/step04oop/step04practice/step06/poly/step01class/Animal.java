@@ -6,4 +6,9 @@ public class Animal {
 	void sing() {
 		System.out.println(name + "sing() 호출");
 	}
+
+	public void swim() {
+		// TODO Auto-generated method stub
+		
+	}
 }

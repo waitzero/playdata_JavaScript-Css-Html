@@ -1,4 +1,4 @@
-package dev.syntax.step05extends.copy;
+package dev.syntax.step04oop.step05.extend;
 
 public class Mouse extends Animal {// ���(inheritance)�� keyword(�����) : extends
 	
