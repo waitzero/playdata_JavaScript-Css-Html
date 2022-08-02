@@ -47,7 +47,7 @@ public class App {
 	}
 	
 	// 할일 번호(id)로 하나의 Todo 조회
-	public static Todo findById(Todo[] todos, int todoNumber) {
+	public static Todo findById(List<> todos, int todoNumber) {
 		for (Todo todo : todos) { // Todo 타입의 todos 배열에서 각 요소가 todo에 할당됨
 			if(todo.getId() == todoNumber) {
 				return todo;

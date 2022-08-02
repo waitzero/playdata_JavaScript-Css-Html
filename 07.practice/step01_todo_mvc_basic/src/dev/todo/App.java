@@ -16,7 +16,11 @@ public class App {
 		
 		// Cannot make a static reference to the non-static field RESOURCES
 		Path filePath = Paths.get(RESOURCES + "todo-data-simple.txt");
+		//파일 라인수 세기 
+//		Files.lines(path).count(); 
+//		numberOfLines의 타입은Long= lines() 메소드는 파일에서 모든 line을 읽어서 Stream으로 리턴하고, count() 메소드는 Stream의 element 갯수를 리턴합니다.
 		long numberOfLines = Files.lines(filePath).count();
+		//파일 라인수의 개수를 rows라는 정수에 저장
 		int rows = (int)numberOfLines;
 		
 		//할 일 번호들
@@ -28,7 +32,7 @@ public class App {
 		//할 일 날짜들
 		LocalDate[] todoDueDate = new LocalDate[rows]; // import: Ctrl + Shift + O
 		
-		// lines 리스트에는 String 타입만 들어갈 수 있음(<>, generic)
+		// lines 라는 이름의 리스트에는 String 타입만 들어갈 수 있음(<>, generic)
 		List<String> lines = Files.readAllLines(filePath);
 		/* lines = ["1	숙제하기	2022-03-05	수학,영어 숙제"   ---> 0번째 요소
 					"2	밥 먹기 ~~" 						   ---> 1번째 요소
@@ -43,7 +47,7 @@ public class App {
 //			System.out.println(columns[1]);
 //			break;
 			
-			// 읽어들인 각각의 데이터
+			// 읽어들인 각각의 데이터  Integer.parseInt(String 타입의 값)
 			int id = Integer.parseInt(columns[0]);// Type mismatch: cannot convert from String to int
 			String title = columns[1];
 			LocalDate dueDate = LocalDate.parse(columns[2]);

@@ -1,5 +1,6 @@
 package dev.todo.data;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import dev.todo.model.Todo;
 public class TodoTSVParser {
@@ -15,15 +16,13 @@ public class TodoTSVParser {
         return new Todo(id, title, dueDate, description);
     }
     // 파싱된 한 줄의 데이터를 배열에 추가
-    public Todo[] parseLinesFromTSV(List<String> lines, int rows) {
-        Todo[] todos = new Todo[rows];
-        Todo todo;
+    public List<Todo> parseLinesFromTSV(List<String> lines) {
+        List <Todo> todos = new ArrayList<>();
         int index = 0;
         for (String line : lines) {
-//           todo = parseFromTSV(line);
-//           todos[index] = todo;
-            todos[index] = parseFromTSV(line);
-            index++;
+        	Todo todo = parseFromTSV(line);
+        	todos.add(todo);
+        	
         }
         return todos;
     }
