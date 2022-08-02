@@ -1,0 +1,10 @@
+step2 한계점
+1.여전히 App.java 한 곳에서 다양한 역할을 수행하고있음
+	1)데이터의 입출력 및 파싱 처리
+	2)데이터의 출력 결과를 보여주는 View 기능
+	3)어떤 데이터를 조회할지 등을 결정하는 Controller 기능 등등
+	
+steo03
+1.읽어들인 데이터를 parsing해주는 코드를 별도의 클래스 TodoTSVParser.java로 분히
+2.분리한  클래스가 위치한 패키지명은 dev.todo.data, data접근 역할에 해당하는 부분
+3.App.java에서 조회에 해당하능 부분(VIEW 기능
