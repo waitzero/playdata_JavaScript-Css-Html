@@ -26,7 +26,7 @@ public class App {
 		System.out.println(lines);
 		
 		TodoTSVParser parser = new TodoTSVParser();
-		Todo[] todos = parser.parseLinesFromTSV(lines,rows);
+		List<Todo> todos = parser.parseLinesFromTSV(lines,rows);
 
 		// 전체 Todos 조회
 		System.out.println(Arrays.toString(todos));

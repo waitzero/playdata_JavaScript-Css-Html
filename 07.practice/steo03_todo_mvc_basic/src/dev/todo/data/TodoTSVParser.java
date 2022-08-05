@@ -16,7 +16,7 @@ public class TodoTSVParser {
         return new Todo(id, title, dueDate, description);
     }
     // 파싱된 한 줄의 데이터를 배열에 추가
-    public List<Todo> parseLinesFromTSV(List<String> lines) {
+    public List<Todo> parseLinesFromTSV(List<String> lines, int rows) {
         List <Todo> todos = new ArrayList<>();
         int index = 0;
         for (String line : lines) {

@@ -69,14 +69,21 @@ public class MyArrayList<T> implements List<T> {
 	
 	@Override
 	public void add(int index, T element) {
-		
+		if(index<0||index>size) {
+			throw new IndexOutOfBoundsException();
+
+		}
+		add(element);
+		System.out.println("index:" + index +"size:"+size +"array:"+Arrays.toString(array) );
+		for (int j=size -1; j>index; j--) {
+			array[j] = array[j-1];
+			System.out.println("index:" + index +"size:"+size +"array:"+Arrays.toString(array) );
+		}
+		array[index]= element;
 	}
 	@Override
 	public T get(int index) {
-		if(index <0 || index >= size) {
-			throw new IndexOutOfBoundsException();
-		}
-		return array[index];
+		throw new IndexOutOfBoundsException();
 	}
 	/**
 	 * @param index - index of the element to replace
@@ -88,6 +95,29 @@ public class MyArrayList<T> implements List<T> {
 		array[index] = element;
 		
 		return previousElement;
+	}
+	/**
+	 * @return - the element previously at the specified position
+	 */
+	public T remove(int index) {
+		T previousValue = get(index);
+		 for(int i = index; i<size -1; i++) {
+			 array[i] = array[i + 1];
+		 }
+		 size--;
+		return previousValue;
+	}
+	@Override
+	public int indexOf(Object o) {
+		int index = 0;
+		for(T item: array) {
+			if(item == o ) {
+				return index;
+			}
+			index++;
+		}
+
+		return -1;
 	}
 	@Override
 	public boolean isEmpty() {
@@ -149,16 +179,6 @@ public class MyArrayList<T> implements List<T> {
 		// TODO Auto-generated method stub
 	}
 
-	@Override
-	public T remove(int index) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public int indexOf(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	@Override
 	public int lastIndexOf(Object o) {
 		// TODO Auto-generated method stub

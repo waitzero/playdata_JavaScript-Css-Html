@@ -54,4 +54,9 @@ public class MyArrayListTest {
 		letters.add(2, "이와 삼 사이");
 		System.out.println(letters);
 	}
+	public static void testRemove(List<String> letters) {
+		int index =3;
+		System.out.println(letters.remove(3));
+		System.out.println(letters);
+	}
 }
