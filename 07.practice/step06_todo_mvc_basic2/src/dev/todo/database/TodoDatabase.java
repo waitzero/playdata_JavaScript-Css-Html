@@ -54,8 +54,7 @@ public class TodoDatabase {
 		return null;
 }
 
-	private Todo remove(int intValue) {
-		// TODO Auto-generated method stub
-		return null;
+	private Todo removeall() {
+		return todoDatabase.remove();
 	}
 }
