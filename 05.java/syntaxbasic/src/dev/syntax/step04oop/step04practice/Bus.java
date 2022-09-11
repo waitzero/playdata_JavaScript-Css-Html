@@ -1,20 +1,20 @@
 package dev.syntax.step04oop.step04practice;
 
 public class Bus {
-	public int busNumber;// ¹ö½º¹øÈ£
-	public int passengerCount;// ¹ö½º ½Â°´ ¼ö
-	public int busMoney;// ¹ö½ºÀÇ ¼öÀÔ
-	// ¹ö½ºÀÇ ¹øÈ£¸¸ °¡Áö°í ¹ö½º¸¦ ¸ÕÀú »ı¼º
+	public int busNumber;// ë²„ìŠ¤ë²ˆí˜¸
+	public int passengerCount;// ë²„ìŠ¤ ìŠ¹ê° ìˆ˜
+	public int busMoney;// ë²„ìŠ¤ì˜ ìˆ˜ì…
+	// ë²„ìŠ¤ì˜ ë²ˆí˜¸ë§Œ ê°€ì§€ê³  ë²„ìŠ¤ë¥¼ ë¨¼ì € ìƒì„± í•œë‹¤
 
 	public Bus(int busNumber) {
 		this.busNumber = busNumber;
 
 	}
 	public void take(int money) {
-		//½Â°´ÀÌ ¹ö½º¿¡ Å¸¸é ¹ö½º°¡ ÇØ¾ßÇÒÀÏ
-		//1.½Â°´¿¡°Ô¼­ µ·À» ÃëÇÔ
-		//2.¹ŞÀº µ· ¸¸Å­ ¹ö½ºÀÇ ¼öÀÍ Áõ°¡
-		//3.½Â°´ ¼ö Áõ°¡
+		//ìŠ¹ê°ì´ ë²„ìŠ¤ì— íƒ€ë©´ ë²„ìŠ¤ê°€ í•´ì•¼í• ì¼
+		//1.ìŠ¹ê°ì—ê²Œì„œ ëˆì„ ì·¨í•¨
+		//2.ë°›ì€ ëˆ ë§Œí¼ ë²„ìŠ¤ì˜ ìˆ˜ìµ ì¦ê°€
+		//3.ìŠ¹ê° ìˆ˜ ì¦ê°€
 		busMoney+=money;
 		passengerCount++;
 	}
