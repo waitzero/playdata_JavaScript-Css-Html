@@ -25,7 +25,7 @@ public class Basic {//Ŭ���� �̸��� �׻� �빮��(Upperc
 		int $isLogin = 0;//���������� ������ �ϴ�.
 		int _isLogin = 0;
 		
-		//2-3. ���ڷ� ������ �� ����
+		//2-3. ���ڷ� ������ �� 한글깨짐
 //		int 5 = 5; //?
 		
 		//2-4. Keyword(�����) ��� �Ұ�(while, int for, break, class ��)
