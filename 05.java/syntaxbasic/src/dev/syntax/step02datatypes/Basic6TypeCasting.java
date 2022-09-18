@@ -3,59 +3,59 @@ package dev.syntax.step02datatypes;
 public class Basic6TypeCasting {
 
 	public static void main(String[] args) {
-		// °ªÀÇ Çã¿ë¹üÀ§¿¡ µû¸¥ °ªÀÇ ÀúÀå
+		// ê°’ì˜ í—ˆìš©ë²”ìœ„ì— ë”°ë¥¸ ê°’ì˜ ì €ìž¥
 		byte a = 120;
 		int b = 120;
-		long c = 120; // ¸®ÅÍ·² 123Àº ÇöÀç intÅ¸ÀÔÀ¸·Î º¯¼ö cÀÇ long Å¸ÀÔÀÌ int Å¸ÀÔº¸´Ù °ªÀÇ Çã¿ë ¹üÀ§°¡ ³Ð±â ¶§¹®¿¡ ÀúÀå °¡´É
+		long c = 120; // ë¦¬í„°ëŸ´ 123ì€ í˜„ìž¬ intíƒ€ìž…ìœ¼ë¡œ ë³€ìˆ˜ cì˜ long íƒ€ìž…ì´ int íƒ€ìž…ë³´ë‹¤ ê°’ì˜ í—ˆìš© ë²”ìœ„ê°€ ë„“ê¸° ë•Œë¬¸ì— ì €ìž¥ ê°€ëŠ¥
 		double d = 5.5f;
-		// Á¤¸®ÇÏ¸é, ¾î¶² Å¸ÀÔÀÇ Çã¿ë ¹üÀ§°¡ ÀÛÀº Å¸ÀÔ¿¡¼­ Å« Å¸ÀÔÀ¸·ÎÀÇ °ª ÀúÀåÀÌ °¡´É
+		// ì •ë¦¬í•˜ë©´, ì–´ë–¤ íƒ€ìž…ì˜ í—ˆìš© ë²”ìœ„ê°€ ìž‘ì€ íƒ€ìž…ì—ì„œ í° íƒ€ìž…ìœ¼ë¡œì˜ ê°’ ì €ìž¥ì´ ê°€ëŠ¥
 		
-		// ¹Ý´ë·Î ¸®ÅÍ·²(°ª)ÀÇ Å¸ÀÔÀÌ ´ã°íÀÚ ÇÏ´Â º¯¼öÀÇ Å¸ÀÔº¸´Ù Çã¿ë ¹üÀ§°¡ ÀÛÀº °æ¿ì?
+		// ë°˜ëŒ€ë¡œ ë¦¬í„°ëŸ´(ê°’)ì˜ íƒ€ìž…ì´ ë‹´ê³ ìž í•˜ëŠ” ë³€ìˆ˜ì˜ íƒ€ìž…ë³´ë‹¤ í—ˆìš© ë²”ìœ„ê°€ ìž‘ì€ ê²½ìš°ëŠ”?
 //		byte e = 130; // Type mismatch: cannot convert from int to byte
-		// -> byte Å¸ÀÔÀÌ Çã¿ë °¡´ÉÇÑ °ªÀÇ ¹üÀ§¸¦ ÃÊ°úÇÏ¿´±â ¶§¹®¿¡ ÀúÀå ºÒ°¡´É
+		// -> byte íƒ€ìž…ì´ í—ˆìš© ê°€ëŠ¥í•œ ê°’ì˜ ë²”ìœ„ë¥¼ ì´ˆê³¼í•˜ì˜€ê¸° ë•Œë¬¸ì— ì €ìž¥ ë¶ˆê°€ëŠ¥
 		
-		float f = 5.5f; // ºÎµ¿¼Ò¼öÁ¡ÀÇ ±âº» Å¸ÀÔÀº doubleÀÌ±â ¶§¹®¿¡ 5.5µÚ¿¡´Â D°¡ »ý·«µÇ¾î ÀÖÀ½
-		// Áï, doubleÅ¸ÀÔÀÌ±â ¶§¹®¿¡ doubleÅ¸ÀÔÀÇ ¸®ÅÍ·² 5.5¸¦ float Å¸ÀÔÀÎ º¯¼ö f¿¡ ÀúÀå ºÒ°¡´É
+		float f = 5.5f; // ë¶€ë™ì†Œìˆ˜ì ì˜ ê¸°ë³¸ íƒ€ìž…ì€ doubleì´ê¸° ë•Œë¬¸ì— 5.5ë’¤ì—ëŠ” Dê°€ ìƒëžµë˜ì–´ ìžˆìŒ
+		// ì¦‰, doubleíƒ€ìž…ì´ê¸° ë•Œë¬¸ì— doubleíƒ€ìž…ì˜ ë¦¬í„°ëŸ´ 5.5ë¥¼ float íƒ€ìž…ì¸ ë³€ìˆ˜ fì— ì €ìž¥ ë¶ˆê°€ëŠ¥
 		
-		// ¿¹¿ÜÀûÀ¸·Î byte³ª shortÅ¸ÀÔÀº º°µµÀÇ ¸®ÅÍ·² Ç¥±â°¡ Á¸ÀçÇÏÁö ¾Ê±â ¶§¹®¿¡ Çã¿ë ¹üÀ§ ³»¿¡¼­ Á¤¼öÇüÀÇ ±âº»°ªÀÎ intÅ¸ÀÔÀÇ ¸®ÅÍ·²·Î ÀúÀå °¡´É
-		// -> 7,8¶óÀÎ ÂüÁ¶
+		// ì˜ˆì™¸ì ìœ¼ë¡œ byteë‚˜ shortíƒ€ìž…ì€ ë³„ë„ì˜ ë¦¬í„°ëŸ´ í‘œê¸°ê°€ ì¡´ìž¬í•˜ì§€ ì•Šê¸° ë•Œë¬¸ì— í—ˆìš© ë²”ìœ„ ë‚´ì—ì„œ ì •ìˆ˜í˜•ì˜ ê¸°ë³¸ê°’ì¸ intíƒ€ìž…ì˜ ë¦¬í„°ëŸ´ë¡œ ì €ìž¥ ê°€ëŠ¥
+		// -> 7,8ë¼ì¸ ì°¸ì¡°
 		
-		// 6. Å¸ÀÔ º¯È¯, Çü(û¡) º¯È¯(Type casting)
+		// 6. íƒ€ìž… ë³€í™˜, í˜•(å½¢) ë³€í™˜(Type casting)
 		/*
-		 * ¼­·Î ´Ù¸¥ Å¸ÀÔ °£ÀÇ ¿¬»êÀ» ¼öÇàÇÏ±â À§ÇØ¼­´Â ¸ÕÀú Å¸ÀÔÀ» ÀÏÄ¡½ÃÄÑ¾ßÇÔ
-		 * º¯¼ö È¤Àº ¸®ÅÍ·²(°ª)ÀÇ Å¸ÀÔÀ» ´Ù¸¥ Å¸ÀÔÀ¸·Î º¯È¯ÇÏ´Â °ÍÀ» Çü º¯È¯(Type casting)ÀÌ¶ó°í ÇÔ
+		 * ì„œë¡œ ë‹¤ë¥¸ íƒ€ìž… ê°„ì˜ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê¸° ìœ„í•´ì„œëŠ” ë¨¼ì € íƒ€ìž…ì„ ì¼ì¹˜ì‹œì¼œì•¼í•¨
+		 * ë³€ìˆ˜ í˜¹ì€ ë¦¬í„°ëŸ´(ê°’)ì˜ íƒ€ìž…ì„ ë‹¤ë¥¸ íƒ€ìž…ìœ¼ë¡œ ë³€í™˜í•˜ëŠ” ê²ƒì„ í˜• ë³€í™˜(Type casting)ì´ë¼ê³  í•¨
 		 */
 		
-		// 6-1. µ¿ÀÏÇÑ Å¸ÀÔ °£ÀÇ Çü º¯È¯
-		// Q. 17¹ø ¶óÀÎÀÇ float f = 5.5; Ã³·³ doubleÅ¸ÀÔÀÎ ¸®ÅÍ·² 5.5¸¦ float Å¸ÀÔÀÇ º¯¼ö f¿¡ ÀúÀåÇÏ±â À§ÇÑ ¹æ¹ýÀº ¾øÀ»Áö?
-		// ¾îÂ÷ÇÇ 5.5´Â floatÀÇ Çã¿ë ¹üÀ§¿¡ Æ÷ÇÔµÇ´Âµ¥..
+		// 6-1. ë™ì¼í•œ íƒ€ìž… ê°„ì˜ í˜• ë³€í™˜
+		// Q. 17ë²ˆ ë¼ì¸ì˜ float f = 5.5; ì²˜ëŸ¼ doubleíƒ€ìž…ì¸ ë¦¬í„°ëŸ´ 5.5ë¥¼ float íƒ€ìž…ì˜ ë³€ìˆ˜ fì— ì €ìž¥í•˜ê¸° ìœ„í•œ ë°©ë²•ì€ ì—†ì„ì§€?
+		// ì–´ì°¨í”¼ 5.5ëŠ” floatì˜ í—ˆìš© ë²”ìœ„ì— í¬í•¨ë˜ëŠ”ë°..
 		
-		// 1¹øÂ° ¹æ¹ý. double Å¸ÀÔÀÇ ¸®ÅÍ·² 5.5 µÚ¿¡ Á¢¹Ì»ç f¸¦ Ãß°¡ÇØ¼­ Ã³À½ºÎÅÍ floatÅ¸ÀÔÀ¸·Î ÀÛ¼ºÇÑ´Ù.
+		// 1ë²ˆì§¸ ë°©ë²•. double íƒ€ìž…ì˜ ë¦¬í„°ëŸ´ 5.5 ë’¤ì— ì ‘ë¯¸ì‚¬ fë¥¼ ì¶”ê°€í•´ì„œ ì²˜ìŒë¶€í„° floatíƒ€ìž…ìœ¼ë¡œ ìž‘ì„±í•œë‹¤.
 		float g = 5.5f;
 		
-		// 2¹øÂ° ¹æ¹ý. Çü º¯È¯À» È°¿ëÇÏ¿© double Å¸ÀÔÀÇ ¸®ÅÍ·² 5.5¸¦ float Å¸ÀÔÀ¸·Î º¯È¯ÇÑ´Ù.
-		float h = (float)5.5; // º¯È¯ÇÏ°íÀÚ ÇÏ´Â ¸®ÅÍ·² ¾Õ¿¡ º¯È¯ÇÏ°í ½ÍÀº Å¸ÀÔÀ» ¸í½Ã(Explicit)ÇÔ -> ¸í½ÃÀû Çüº¯È¯
+		// 2ë²ˆì§¸ ë°©ë²•. í˜• ë³€í™˜ì„ í™œìš©í•˜ì—¬ double íƒ€ìž…ì˜ ë¦¬í„°ëŸ´ 5.5ë¥¼ float íƒ€ìž…ìœ¼ë¡œ ë³€í™˜í•œë‹¤.
+		float h = (float)5.5; // ë³€í™˜í•˜ê³ ìž í•˜ëŠ” ë¦¬í„°ëŸ´ ì•žì— ë³€í™˜í•˜ê³  ì‹¶ì€ íƒ€ìž…ì„ ëª…ì‹œ(Explicit)í•¨ -> ëª…ì‹œì  í˜•ë³€í™˜
 		
-		// º¯¼ö¿¡ ´ã°ÜÀÖ´Â ¸®ÅÍ·²À» Çü º¯È¯ÇÏ°íÀÚÇÏ´Â °æ¿ì¿¡µµ ¸¶Âù°¡Áö
+		// ë³€ìˆ˜ì— ë‹´ê²¨ìžˆëŠ” ë¦¬í„°ëŸ´ì„ í˜• ë³€í™˜í•˜ê³ ìží•˜ëŠ” ê²½ìš°ì—ë„ ë§ˆì°¬ê°€ì§€
 		double i = 5.5;
 		float j = (float)i;
 		
-		// 6-1-1. Å¸ÀÔÀÇ ¹üÀ§¸¦ ÃÊ°úÇÏ´Â °ªÀ» °­Á¦·Î Çü º¯È¯ÇÏ¿© ÀúÀåÇÑ °æ¿ì
-		byte k = (byte)128; // byte°ªÀÇ Çã¿ë ¹üÀ§ -128 ~ 127, 
-		System.out.println(k); // ?, -127, ¿À¹öÇÃ·Î(Overflow)
+		// 6-1-1. íƒ€ìž…ì˜ ë²”ìœ„ë¥¼ ì´ˆê³¼í•˜ëŠ” ê°’ì„ ê°•ì œë¡œ í˜• ë³€í™˜í•˜ì—¬ ì €ìž¥í•œ ê²½ìš°
+		byte k = (byte)128; // byteê°’ì˜ í—ˆìš© ë²”ìœ„ -128 ~ 127, 
+		System.out.println(k); // ?, -127, ì˜¤ë²„í”Œë¡œ(Overflow)
 		
-		// 6-2. ¼­·Î ´Ù¸¥ Å¸ÀÔ °£ÀÇ Çü º¯È¯
-		int l = (int)5.0f; // º¯¼ö lÀÇ Å¸ÀÔÀº int, ¿ìÃø ¸®ÅÍ·² 5.0ÀÇ Å¸ÀÔÀº f(float)
-		System.out.println(l); // º¯¼ö lÀº Á¤¼öÇüÀÌ±â ¶§¹®¿¡ º¯È¯ °úÁ¤¿¡¼­ Á¤¼ö°ª¸¸ Ã³¸®µÊ
+		// 6-2. ì„œë¡œ ë‹¤ë¥¸ íƒ€ìž… ê°„ì˜ í˜• ë³€í™˜
+		int l = (int)5.0f; // ë³€ìˆ˜ lì˜ íƒ€ìž…ì€ int, ìš°ì¸¡ ë¦¬í„°ëŸ´ 5.0ì˜ íƒ€ìž…ì€ f(float)
+		System.out.println(l); // ë³€ìˆ˜ lì€ ì •ìˆ˜í˜•ì´ê¸° ë•Œë¬¸ì— ë³€í™˜ ê³¼ì •ì—ì„œ ì •ìˆ˜ê°’ë§Œ ì²˜ë¦¬ë¨
 		
-		int m = (int)5.5f;//º¯¼ö mÀº Á¤¼ö Å¸ÀÔÀÌ±â ¶§¹®¿¡ º­È¯ °úÁ¤¿¡¼­ 0.5°¡ ¼Õ½Ç, 5.5°¡ ¾Æ´Ñ 5°¡ Ãâ·Â
+		int m = (int)5.5f;//ë³€ìˆ˜ mì€ ì •ìˆ˜ íƒ€ìž…ì´ê¸° ë•Œë¬¸ì— ë²¼í™˜ ê³¼ì •ì—ì„œ 0.5ê°€ ì†ì‹¤, 5.5ê°€ ì•„ë‹Œ 5ê°€ ì¶œë ¥
 		System.out.println(m); // 
 		
-		//6-3. ÀÚµ¿ Çü º¯È¯(Implicit casting, ¹¬½ÃÀû or ¾Ï½ÃÀû Çü º¯È¯
-		//¾î¶² º¯¼ö¿¡ ÀúÀåÇÏ°íÀÚ ÇÏ´Â ¸®ÅÍ·²ÀÌ °¡Áú ¼ö ÀÖ´Â °©ÀÌ ¹üÀ§°¡ º¯¼ö°¡ °¡Áø Å¸ÀÔº¸´Ù ÀÛÀ» °æ¿ì ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î Çü º¯È¯ ÄÚµå¸¦ ÀÛ¼ºÇØÁÜ
-		long n= 135; //¸®ÅÍ·² 135´Â int Å¸ÀÔÀÌÁö¸¸ longÀÇ ¹üÀ§°¡ intº¸´Ù ³Ð±â ¶§¹®¿¡ ÀÚµ¿À¸·Î long n = (long)135;·Î ÀÛ¼ºµÊ
-		float o = 100; //¼­·Î ´Ù¸¥ Å¸ÀÔÀÌ¾îµµ, Á¤¼öº¸´Ù ½Ç¼ö°¡ °ªÀ» ÀúÀåÇÒ ¼ö ÀÖ´Â ¹üÀ§°¡ ´õ Å©±â ¶§¹®¿¡ °¡´É
-		//booleanÅ¸ÀÔÀ» Á¦¿ÜÇÑ ³ª¸ÓÁö ±âº» Å¸ÀÔµéÀº ¼­·Î Çü º¯È¯ÀÌ °¡´É
+		//6-3. ìžë™ í˜• ë³€í™˜(Implicit casting, ë¬µì‹œì  or ì•”ì‹œì  í˜• ë³€í™˜
+		//ì–´ë–¤ ë³€ìˆ˜ì— ì €ìž¥í•˜ê³ ìž í•˜ëŠ” ë¦¬í„°ëŸ´ì´ ê°€ì§ˆ ìˆ˜ ìžˆëŠ” ê°‘ì´ ë²”ìœ„ê°€ ë³€ìˆ˜ê°€ ê°€ì§„ íƒ€ìž…ë³´ë‹¤ ìž‘ì„ ê²½ìš° ì»´íŒŒì¼ëŸ¬ê°€ ìžë™ìœ¼ë¡œ í˜• ë³€í™˜ ì½”ë“œë¥¼ ìž‘ì„±í•´ì¤Œ
+		long n= 135; //ë¦¬í„°ëŸ´ 135ëŠ” int íƒ€ìž…ì´ì§€ë§Œ longì˜ ë²”ìœ„ê°€ intë³´ë‹¤ ë„“ê¸° ë•Œë¬¸ì— ìžë™ìœ¼ë¡œ long n = (long)135;ë¡œ ìž‘ì„±ë¨
+		float o = 100; //ì„œë¡œ ë‹¤ë¥¸ íƒ€ìž…ì´ì–´ë„, ì •ìˆ˜ë³´ë‹¤ ì‹¤ìˆ˜ê°€ ê°’ì„ ì €ìž¥í•  ìˆ˜ ìžˆëŠ” ë²”ìœ„ê°€ ë” í¬ê¸° ë•Œë¬¸ì— ê°€ëŠ¥
+		//booleaníƒ€ìž…ì„ ì œì™¸í•œ ë‚˜ë¨¸ì§€ ê¸°ë³¸ íƒ€ìž…ë“¤ì€ ì„œë¡œ í˜• ë³€í™˜ì´ ê°€ëŠ¥
 		
 		
 	}
